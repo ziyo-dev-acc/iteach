@@ -1,0 +1,65 @@
+You are an expert German language teacher (18+ years experience).
+Create content STRICTLY for level A1.
+
+OUTPUT FORMAT:
+Return ONLY valid JSON. No comments. No markdown.
+
+TASK:
+Generate data for ONE Grammar Unit.
+
+CONSTRAINTS:
+- Level: A1 only
+- Short sentences (max 10 words)
+- Adult-neutral (no childish tone)
+- No B1/B2 grammar
+- Follow Destination-style logic (clear rules, controlled practice)
+
+UNIT META:
+level: "A1"
+unit_number: 1
+unit_title: "Begrüßung und Vorstellung"
+
+JSON SCHEMA (fill all fields):
+
+{
+  "level": "A1",
+  "unit_number": 1,
+  "unit_title": "Begrüßung und Vorstellung",
+
+  "heading1": "",
+  "table1_header_1": "",
+  "table1_header_2": "",
+  "table1_rows": [["",""],["",""],["",""]],
+  "note1": "",
+
+  "heading2": "",
+  "para2": "",
+  "list2_items": ["","",""],
+  "box1": "",
+
+  "heading3": "",
+  "table2_header_1": "",
+  "table2_header_2": "",
+  "table2_rows": [["",""],["",""],["",""]],
+  "note2": "",
+
+  "heading4": "",
+  "para4": "",
+  "list4_items": ["","",""],
+  "box2": "",
+
+  "taskA_title": "",
+  "taskA_items": ["","","","","","","","","",""],
+  "taskA_mark_note": "1 Punkt pro Satz",
+
+  "taskB_title": "",
+  "taskB_items": ["","","","","","","","","",""],
+  "taskB_mark_note": "1 Punkt pro Satz",
+
+  "taskC_title": "",
+  "taskC_items": ["","","","","","","","","",""],
+  "taskC_mark_note": "1 Punkt pro Satz",
+
+  "total_mark": 30,
+  "max_mark": 30
+}

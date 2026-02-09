@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>Grammatik Einheit {{unit_number}}</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PAGE 1: Explanation -->
+<section class="page">
+  <header class="page-header">
+    <div class="header-left">
+      <span class="unit-chip">Unit {{unit_number}}</span>
+      <span class="unit-title-main">Grammatik</span>
+    </div>
+    <div class="header-right">
+      <div class="unit-subtitle">{{unit_title}}</div>
+      <div class="meta-line">Level: {{level}} • Einheit {{unit_number}}</div>
+    </div>
+  </header>
+
+  <div class="block">
+    <div class="block-title"><span class="block-num">1</span>{{heading1}}</div>
+    <div class="block-body">
+      <div class="table-container">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th>{{table1_header_1}}</th>
+              <th>{{table1_header_2}}</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{table1_rows}}
+          </tbody>
+        </table>
+      </div>
+      <div class="callout"><strong>Hinweis:</strong> {{note1}}</div>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="block-title"><span class="block-num">2</span>{{heading2}}</div>
+    <div class="block-body">
+      <p>{{para2}}</p>
+      <ul>
+        {{list2_items}}
+      </ul>
+    </div>
+  </div>
+
+  <div class="key-box">{{box1}}</div>
+
+  <div class="block">
+    <div class="block-title"><span class="block-num">3</span>{{heading3}}</div>
+    <div class="block-body">
+      <div class="table-container">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th>{{table2_header_1}}</th>
+              <th>{{table2_header_2}}</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{table2_rows}}
+          </tbody>
+        </table>
+      </div>
+      <div class="callout"><strong>Hinweis:</strong> {{note2}}</div>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="block-title"><span class="block-num">4</span>{{heading4}}</div>
+    <div class="block-body">
+      <p>{{para4}}</p>
+      <ul>
+        {{list4_items}}
+      </ul>
+    </div>
+  </div>
+
+  <div class="key-box">{{box2}}</div>
+</section>
+
+<!-- PAGE 2: Exercises 1 -->
+<section class="page">
+  <div class="simple-header">Unit {{unit_number}} • Grammar – Übungen 1</div>
+
+  <div class="task-section">
+    <div class="task-header">
+      <span class="task-letter">A</span>
+      <span class="task-title">{{taskA_title}}</span>
+    </div>
+    <ol class="tasklist">
+      {{taskA_items}}
+    </ol>
+    <div class="mark-note">{{taskA_mark_note}}</div>
+  </div>
+
+  <div class="task-section">
+    <div class="task-header">
+      <span class="task-letter">B</span>
+      <span class="task-title">{{taskB_title}}</span>
+    </div>
+    <ol class="tasklist">
+      {{taskB_items}}
+    </ol>
+    <div class="mark-note">{{taskB_mark_note}}</div>
+  </div>
+
+  <div class="task-section">
+    <div class="task-header">
+      <span class="task-letter">C</span>
+      <span class="task-title">{{taskC_title}}</span>
+    </div>
+    <ol class="tasklist">
+      {{taskC_items}}
+    </ol>
+    <div class="mark-note">{{taskC_mark_note}}</div>
+  </div>
+</section>
+
+<!-- PAGE 3: Exercises 2 -->
+<section class="page">
+  <div class="simple-header">Unit {{unit_number}} • Grammar – Übungen 2</div>
+
+  <div class="task-section">
+    <div class="task-header">
+      <span class="task-letter">D</span>
+      <span class="task-title">{{taskD_title}}</span>
+    </div>
+    <ol class="tasklist">
+      {{taskD_items}}
+    </ol>
+    <div class="mark-note">{{taskD_mark_note}}</div>
+  </div>
+
+  <div class="task-section">
+    <div class="task-header">
+      <span class="task-letter">E</span>
+      <span class="task-title">{{taskE_title}}</span>
+    </div>
+    <ol class="tasklist">
+      {{taskE_items}}
+    </ol>
+    <div class="mark-note">{{taskE_mark_note}}</div>
+  </div>
+
+  <div class="task-section">
+    <div class="task-header">
+      <span class="task-letter">F</span>
+      <span class="task-title">{{taskF_title}}</span>
+    </div>
+    <ol class="tasklist">
+      {{taskF_items}}
+    </ol>
+    <div class="mark-note">{{taskF_mark_note}}</div>
+  </div>
+
+  <div class="total-mark">Gesamtpunktzahl: {{total_mark}} / {{max_mark}}</div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>Überprüfung {{review_number}}</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="page">
+  <header class="page-header">
+    <div class="header-left">
+      <span class="unit-chip">Review {{review_number}}</span>
+      <span class="unit-title-main">Units {{unit_range}}</span>
+    </div>
+    <div class="header-right">
+      <div class="meta-line">Mini‑Review</div>
+    </div>
+  </header>
+
+  <div class="mark-note">1 Punkt pro Aufgabe • Gesamt: /50</div>
+
+  <div class="task-section">
+    <div class="task-header">
+      <span class="task-letter">A</span>
+      <span class="task-title">{{sectionA_title}}</span>
+    </div>
+    <ol class="tasklist">
+      {{sectionA_items}}
+    </ol>
+  </div>
+
+  <div class="task-section">
+    <div class="task-header">
+      <span class="task-letter">B</span>
+      <span class="task-title">{{sectionB_title}}</span>
+    </div>
+    <ol class="tasklist">
+      {{sectionB_items}}
+    </ol>
+  </div>
+
+  <div class="task-section">
+    <div class="task-header">
+      <span class="task-letter">C</span>
+      <span class="task-title">{{sectionC_title}}</span>
+    </div>
+    <ol class="tasklist">
+      {{sectionC_items}}
+    </ol>
+  </div>
+
+  <div class="task-section">
+    <div class="task-header">
+      <span class="task-letter">D</span>
+      <span class="task-title">{{sectionD_title}}</span>
+    </div>
+    <ol class="tasklist">
+      {{sectionD_items}}
+    </ol>
+  </div>
+
+  <div class="task-section">
+    <div class="task-header">
+      <span class="task-letter">E</span>
+      <span class="task-title">{{sectionE_title}}</span>
+    </div>
+    <ol class="tasklist">
+      {{sectionE_items}}
+    </ol>
+  </div>
+
+  <div class="total-mark">Gesamtpunktzahl: {{total_mark}} / 50</div>
+</section>
+
+</body>
+</html>

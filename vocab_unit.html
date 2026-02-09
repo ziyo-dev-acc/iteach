@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>Wortschatz Einheit {{unit_number}}</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PAGE 1: Explanation -->
+<section class="page">
+  <header class="page-header">
+    <div class="header-left">
+      <span class="unit-chip">Unit {{unit_number}}</span>
+      <span class="unit-title-main">Wortschatz</span>
+    </div>
+    <div class="header-right">
+      <div class="unit-subtitle">{{unit_title}}</div>
+      <div class="meta-line">Level: {{level}} • Einheit {{unit_number}}</div>
+    </div>
+  </header>
+
+  <div class="block">
+    <div class="block-title"><span class="block-num">1</span>Topic vocabulary: {{topic1_title}}</div>
+    <div class="block-body">
+      <div class="table-container">
+        <table class="vocab-table">
+          <thead>
+            <tr>
+              <th>Deutsch</th><th>Info</th><th>Bedeutung</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{topic1_rows}}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="block-title"><span class="block-num">2</span>Topic vocabulary: {{topic2_title}}</div>
+    <div class="block-body">
+      <div class="table-container">
+        <table class="vocab-table">
+          <thead>
+            <tr>
+              <th>Deutsch</th><th>Info</th><th>Bedeutung</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{topic2_rows}}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="block-title"><span class="block-num">3</span>{{verbs_heading}}</div>
+    <div class="block-body">
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr><th>Ausdruck</th><th>Bedeutung / Beispiel</th></tr>
+          </thead>
+          <tbody>
+            {{verbs_rows}}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="key-box">{{vocab_box}}</div>
+</section>
+
+<!-- PAGE 2: Exercises 1 -->
+<section class="page">
+  <div class="simple-header">Unit {{unit_number}} • Wortschatz – Übungen 1</div>
+
+  <div class="task-section">
+    <div class="task-header">
+      <span class="task-letter">A</span>
+      <span class="task-title">{{taskA_title}}</span>
+    </div>
+    <div class="word-box">{{taskA_wordbox}}</div>
+    <ol class="tasklist">
+      {{taskA_items}}
+    </ol>
+    <div class="mark-note">{{taskA_mark_note}}</div>
+  </div>
+
+  <div class="task-section">
+    <div class="task-header">
+      <span class="task-letter">B</span>
+      <span class="task-title">{{taskB_title}}</span>
+    </div>
+    <div class="word-box">{{taskB_wordbox}}</div>
+    <ol class="tasklist">
+      {{taskB_items}}
+    </ol>
+    <div class="mark-note">{{taskB_mark_note}}</div>
+  </div>
+
+  <div class="task-section">
+    <div class="task-header">
+      <span class="task-letter">C</span>
+      <span class="task-title">{{taskC_title}}</span>
+    </div>
+    <ol class="tasklist">
+      {{taskC_items}}
+    </ol>
+    <div class="mark-note">{{taskC_mark_note}}</div>
+  </div>
+</section>
+
+<!-- PAGE 3: Exercises 2 -->
+<section class="page">
+  <div class="simple-header">Unit {{unit_number}} • Wortschatz – Übungen 2</div>
+
+  <div class="task-section">
+    <div class="task-header">
+      <span class="task-letter">D</span>
+      <span class="task-title">{{taskD_title}}</span>
+    </div>
+    <ol class="tasklist">
+      {{taskD_items}}
+    </ol>
+    <div class="mark-note">{{taskD_mark_note}}</div>
+  </div>
+
+  <div class="task-section">
+    <div class="task-header">
+      <span class="task-letter">E</span>
+      <span class="task-title">{{taskE_title}}</span>
+    </div>
+    <ol class="tasklist">
+      {{taskE_items}}
+    </ol>
+    <div class="mark-note">{{taskE_mark_note}}</div>
+  </div>
+
+  <div class="task-section">
+    <div class="task-header">
+      <span class="task-letter">F</span>
+      <span class="task-title">{{taskF_title}}</span>
+    </div>
+    <ol class="tasklist">
+      {{taskF_items}}
+    </ol>
+    <div class="mark-note">{{taskF_mark_note}}</div>
+  </div>
+
+  <div class="total-mark">Gesamtpunktzahl: {{total_mark}} / {{max_mark}}</div>
+</section>
+
+</body>
+</html>

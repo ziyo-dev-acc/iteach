@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>Finale Überprüfung</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PAGE 1 -->
+<section class="page">
+  <header class="page-header">
+    <div class="header-left">
+      <span class="unit-chip">Final Review</span>
+      <span class="unit-title-main">Units {{unit_range}}</span>
+    </div>
+    <div class="header-right">
+      <div class="meta-line">Gesamt: /150</div>
+    </div>
+  </header>
+
+  <div class="mark-note">1 Punkt pro Aufgabe</div>
+
+  <div class="block">
+    <div class="block-title"><span class="block-num">1</span>Teil 1</div>
+    <div class="block-body">
+      <div class="cols2">
+        <ol class="tasklist">
+          {{final_p1_items}}
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PAGE 2 -->
+<section class="page">
+  <header class="page-header">
+    <div class="header-left">
+      <span class="unit-chip">Final Review</span>
+      <span class="unit-title-main">Units {{unit_range}}</span>
+    </div>
+    <div class="header-right">
+      <div class="meta-line">Fortsetzung</div>
+    </div>
+  </header>
+
+  <div class="block">
+    <div class="block-title"><span class="block-num">2</span>Teil 2</div>
+    <div class="block-body">
+      <div class="cols2">
+        <ol class="tasklist">
+          {{final_p2_items}}
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PAGE 3 -->
+<section class="page">
+  <header class="page-header">
+    <div class="header-left">
+      <span class="unit-chip">Final Review</span>
+      <span class="unit-title-main">Units {{unit_range}}</span>
+    </div>
+    <div class="header-right">
+      <div class="meta-line">Abschluss</div>
+    </div>
+  </header>
+
+  <div class="block">
+    <div class="block-title"><span class="block-num">3</span>Teil 3</div>
+    <div class="block-body">
+      <div class="cols2">
+        <ol class="tasklist">
+          {{final_p3_items}}
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <div class="total-mark">Gesamtpunktzahl: {{total_mark}} / 150</div>
+</section>
+
+</body>
+</html>
